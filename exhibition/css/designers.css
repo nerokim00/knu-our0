@@ -41,7 +41,7 @@ header {
 
 #identity_img_box {
     border-radius: 50%;
-    background-image: url(/exhibition/img/png_bg.png);
+    background-image: url(../img/png_bg.png);
     background-size: cover;
 }
 
