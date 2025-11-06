@@ -38,7 +38,7 @@ function handleTouchDevice(item) {
     const contains = e.target.classList.contains("active");
     if (contains) {
       window.location.href =
-        "/exhibition/a_designer.html?designer=" +
+        "../a_designer.html?designer=" +
         encodeURIComponent(item.name_en);
     }
     if (item.identity_img) {
@@ -47,7 +47,7 @@ function handleTouchDevice(item) {
     img_el.setAttribute("alt", item.keyword);
     img_el.style.display = "block";
     img_el.dataset.href =
-      "/exhibition/a_designer.html?designer=" +
+      "../a_designer.html?designer=" +
       encodeURIComponent(item.name_en);
 
     for (let i = 0; i < keyword_elements.length; i++) {
@@ -67,7 +67,7 @@ function handleDesktopDevice(item) {
   anchor.textContent = item.name_kr;
   anchor.className = "student_name_box";
   anchor.href =
-    "/exhibition/a_designer.html?designer=" + encodeURIComponent(item.name_en);
+    "../a_designer.html?designer=" + encodeURIComponent(item.name_en);
   anchor.onmouseenter = () => {
     if (item.identity_img) {
       img_el.setAttribute("src", item.identity_img + "&sz=w500");
