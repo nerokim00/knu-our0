@@ -72,7 +72,7 @@ function setData(projects) {
     gra.className = "border hover-gra";
 
     const aHref = document.createElement("a");
-    aHref.setAttribute("href", `../a_project.html?project_name=${encodeURIComponent(item.project_name)}`);
+    aHref.setAttribute("href", `./a_project.html?project_name=${encodeURIComponent(item.project_name)}`);
 
     const img = document.createElement("img");
     img.setAttribute("src", item.thumbnail + "&sz=w1000");

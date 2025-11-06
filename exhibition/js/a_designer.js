@@ -5,7 +5,7 @@
 function projectComponent(project) {
   return `<div class="border a_project inner">
             <div class="border project_img">
-              <a href="../a_project.html?project_name=${encodeURIComponent(project.project_name)}">
+              <a href="./a_project.html?project_name=${encodeURIComponent(project.project_name)}">
                 <img
                   src="${project.thumbnail}&sz=w1000"
                   alt="작품 썸네일"

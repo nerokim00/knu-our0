@@ -1,8 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const intro = document.querySelector(".intro");
+  const intro = document.querySelector("#intro");
   const video = intro.querySelector("video");
   const closeBtn = intro.querySelector(".end");
+  const played = window.sessionStorage.getItem("intro-played");
 
+  if (played) {
+    return;
+  }
+  
+  window.sessionStorage.setItem("intro-played", "true");
+  intro.classList.add("intro");
   // 페이드 아웃 함수
   function fadeOutIntro() {
     if (intro) {

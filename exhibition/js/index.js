@@ -45,7 +45,7 @@ fetch("../public/database.json")
             document.querySelector(".background-white").style.opacity = "0.2";  // mix-blend-mode 없애기
 
             img.addEventListener("click", ()=> {
-                window.location.href = "../a_designer.html?designer=" + encodeURIComponent(item.name_en);
+                window.location.href = "./exhibition/a_designer.html?designer=" + encodeURIComponent(item.name_en);
             });
         };
 
