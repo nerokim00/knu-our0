@@ -1,5 +1,5 @@
 function designerProfile(designer) {
-  return `<a href="/exhibition/a_designer.html?designer=${encodeURIComponent(designer.name_en)}">
+  return `<a href="../a_designer.html?designer=${encodeURIComponent(designer.name_en)}">
         <div class="name">
             <p class="en">${designer.name_kr}</p>
             <p class="en">${designer.name_en}</p>
