@@ -1,0 +1,1142 @@
+/* .border {
+    border: 1px solid #f00;
+} */
+
+::-webkit-scrollbar {
+    display: none;
+   }
+
+.wrap {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: visible;
+}
+.about_section {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* ---------- title ---------- */
+h1 {
+    font-family: 'Panchang-Extrabold';
+}
+
+h1 span {
+    color: var(--black);
+    -webkit-text-stroke: 1px var(--white);
+    animation-name: span;
+    animation-duration: 1.4s;
+    animation-timing-function: cubic-bezier(.8,0,.2,0);
+}
+@keyframes span {
+    0% {
+        color: var(--white);
+        -webkit-text-stroke: 1px var(--black);
+    }
+  
+    100% {
+        color: var(--black);
+        -webkit-text-stroke: 1px var(--white);
+    }
+}
+
+
+
+/* ---------- poster ---------- */
+.posterNexhibi, .posters_group {
+    position: relative;
+}
+
+
+.swiper-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.mySwiper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 0 0 0 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    overflow: hidden;
+}
+.swiper-slide img, .swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination {
+    width: 100%;
+    display: flex;
+    gap: 7px;
+    transform: translateX(-4px);
+    z-index: 1;
+}
+.swiper-pagination-bullet {
+    background-color: #000;
+    border: 1px solid #fff;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+}
+
+
+
+/* ---------- video ---------- */
+.videoNdes {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.video_group {
+    position: relative;
+}
+
+
+
+/* ---------- xs-text ---------- */
+.xs-text {
+    font-size: 20px;
+    font-weight: 800;
+}
+.videoNdes .xs-text {
+    text-align: right;
+}
+
+
+
+/* ---------- des ---------- */
+.des-text, .des-subtitle {font-size: 18px; }
+
+.des-title {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    margin-bottom: 60px;
+}
+.des-subtitle {
+    font-weight: 700;
+    margin-bottom: 68px;
+}
+
+
+
+/* ---------- mm, px ---------- */
+.mm, .px {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.triangle {
+    width: 5px;
+    height: 6px;
+    position: absolute;
+    background-color: var(--white);
+    position: absolute;
+    bottom: 12px;
+
+}
+
+.mm li:nth-child(1),
+.mm li:nth-child(5),
+.px li:nth-child(1),
+.px li:nth-child(5) {
+    width: 1px;
+    height: 30px;
+    border-right: 1px solid var(--white);
+}
+.mm li:nth-child(1), .px li:nth-child(1) {
+    position: absolute;
+    left: 0;
+}
+.mm li:nth-child(5), .px li:nth-child(5) {
+    position: absolute;
+    right: 0;
+}
+.mm li:nth-child(2), .px li:nth-child(2) {
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    left: 1px;
+}
+.mm li:nth-child(4), .px li:nth-child(4) {
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+    right: 1px;
+}
+
+.height_mm {
+    width: 840px;
+    transform: rotate(-90deg) translate(-394px, -396px);
+    margin-top: 80px;
+}
+.width_mm {
+    position: absolute;
+    margin-left: 80px;
+    width: 595px;
+    top: 0;
+    right: 0;
+}
+.height_px {
+    width: 463px;
+    transform: rotate(90deg) translate(-208px, -208px);
+    margin-top: 70px;
+    height: 47px;
+    position: absolute;
+    right: -77px;
+    bottom: 0;
+}
+.width_px {
+    position: relative;
+    width: 824px;
+    height: 47px;
+    margin-bottom: 30px;
+}
+
+
+.mm594, .mm841, .px1920, .px1080{
+    width: 100%;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--white);
+}
+
+.mm594 { padding: 0 267px 5px; }
+.mm841 { padding: 0 390px 5px; }
+.px1920 { padding: 0 383px 5px; }
+.px1080 { padding: 0 202px 5px; }
+
+
+
+/* ---------- tab ---------- */
+.tab-btn {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: auto;
+}
+.tab-btn ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity: 0.2;
+}
+.tab-btn ul li:nth-child(1) {
+    font-family: 'Panchang-Bold';
+}
+.tab-btn .circle {
+    background-color: var(--white);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.tab-contents {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ----------  advisor ---------- */
+.tab-contents .advisor {
+    position: relative;
+    display: flex;
+}
+.advisor-inner {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.advisor-inner:nth-child(2),
+.advisor-inner:nth-child(3),
+.advisor-inner:nth-child(4) {
+    z-index: 2;
+}
+
+.advisor-name {
+    font-weight: 500;
+    display: flex;
+    text-align: center;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.field {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.field p, .team-field {
+    font-weight: 800;
+    text-align: center;
+    color: var(--black);
+    z-index: 1;
+    line-height: 130%;
+}
+
+.team {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-field {
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 35%);
+    z-index: 3;
+}
+.team .img-box, .team-hover {
+    position: absolute;
+}
+.team-hover {
+    opacity: 0;
+    display: flex;
+}
+
+
+
+/* ---------- committee ---------- */
+.tab-contents .committee {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--white);
+    font-family: 'Pretendard', sans-serif;
+}
+.tab-contents .committee ul {
+    width: 245px;
+    flex-wrap: wrap;
+    padding-left: 28px;
+    display: flex;
+    gap: 24px 28px;
+}
+
+.tab-contents .committee p {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 68px;
+}
+.tab-contents .committee ul li {
+    width: 47px;
+    font-size: 18px;
+}
+
+
+
+/* ---------- hall ---------- */
+.tab-contents .hall {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-contents .hall .ti {
+    font-family: 'Panchang-Light';
+    text-align: right;
+}
+.tab-contents .hall .ti span {
+    font-family: 'Panchang-Regular';
+    color: var(--black);
+    background-color: var(--white);
+}
+.tab-contents .hall ul:nth-child(1) .kr {
+    text-align: right;
+    font-size: 18px;
+}
+
+.tab-contents .hall .img-box {
+    position: absolute;
+    z-index: -100;
+    pointer-events: none;
+}
+
+.tab-contents .hall ul:nth-child(2) {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+
+
+/*  ---------- hover 효과 ---------- */
+.field:hover:not(.pteam, .puiux, .bibx) {
+    opacity: 1;
+    background-color: var(--white);
+    transition: all 0.5s
+
+}
+
+.advisor-inner:nth-child(2):hover {
+    border: 0px;
+    transition: all 1s;
+}
+.advisor-inner:nth-child(3):hover {
+    border: 0px;
+    transition: all 1s;
+}
+.advisor-inner:nth-child(4):hover {
+    border: 0px;
+    transition: all 1s;
+}
+
+.pteam:hover {
+    opacity: 1;
+    background: no-repeat center/100% url("../img/product_team_bg.svg");
+    transition: all 0.5s;
+}
+.puiux:hover {
+    opacity: 1;
+    background: no-repeat center/100% url("../img/product_uxui_bg.svg");
+    transition: all 0.5s;
+}
+.bibx:hover {
+    opacity: 1;
+    background: no-repeat center/100% url("../img/bibx_bg.svg");
+    transition: all 0.5s;
+}
+
+.team-hover:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+
+
+/* ---------- tab 기능 설정 ---------- */
+.tab-btn .active {
+    opacity: 1;
+    margin-top: 0;
+    transition: all 0.7s cubic-bezier(.8,0,.2,0);
+}
+
+.tab-btn .active .circle {
+    opacity: 1;
+    transition: all 0.7s cubic-bezier(.8,0,.2,0);
+}
+
+.tab-contents .advisor,
+.tab-contents .committee,
+.tab-contents .hall { display: none; }
+
+.tab-contents .active { display: flex; }
+
+
+
+/*  ---------- 반응형 ---------- */
+/* 데스크탑 */
+@media (min-width: 1200px) {
+    .wrap {
+        max-width: 1920px;
+        min-width: 1524px;
+    }
+
+    
+
+    /* ---------- title ---------- */
+    .title {
+        padding: 330px 0 0 250px;
+        margin-bottom: 264px;
+    }
+    h1 {
+        font-size: 140px;
+    }
+
+
+
+    /* ---------- poster ---------- */
+    .posterNexhibi {
+        padding: 0 250px 0 170px;
+        margin-bottom: 250px;
+        display: flex;
+        align-items: start;
+    }
+    .posters_group {
+        width: 675px;
+        height: 957px;
+    }
+    .mySwiper {
+        width: 595px;
+        height: 880px;
+        transform: translate(79px, -48px); 
+    }
+
+    .posterNexhibi .xs-text {
+        margin: 838px 0 0 30px;
+    }
+    
+    .arrow {
+        width: 74px;
+        height: 74px;
+        margin: 566px 0 0 6px;
+    }
+
+    .exhibi_des {
+        margin: 62px 0 0 87px;
+    }
+
+
+
+    /* ---------- video ---------- */
+    .videoNdes {
+        padding: 0 250px 0;
+        margin-bottom: 590px;
+        display: flex;
+        align-items: start;
+    }
+    .video_group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;  
+        width: 900px;
+    }
+    .video {
+        width: 824px;
+        height: 463px;
+    }
+
+    .videoNdes .xs-text {
+        margin-bottom: 70px; 
+    }
+    .xsNdes {
+        margin: 126px 40px 0 0; 
+    }
+    .videoNdes .des-text {
+        text-align: right;
+    }
+
+
+
+    /* ---------- tab ---------- */
+    .tab-btn {
+        gap: 160px;
+        height: 82px;
+    }
+    .tab-btn ul {
+        width: 350px;
+    }
+    .tab-btn ul li:nth-child(1) {
+        font-size: 30px;
+    } 
+    .tab-btn .circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tab-btn .active .circle {
+        margin: 32px 0 0;
+    }
+
+
+    .tab-contents {
+        margin-bottom: 450px;
+    }
+
+
+    
+    /* ----------  advisor ---------- */
+    .tab-contents .advisor {
+        margin-top: 210px;
+        width: 1256px;
+        height: 724px;
+    }
+    .advisor-inner {
+        width: 256px;
+        height: 256px;
+    }
+    
+    .advisor-name {
+        font-size: 28px;
+        width: 256px;
+    }
+    
+    .advisor-inner:nth-child(1) {
+        top: 349px;
+        left: 0;
+    }
+    .advisor-inner:nth-child(2) {
+        top: 30px;
+        left: 188px;
+    }
+    .advisor-inner:nth-child(3) {
+        top: 220px;
+        left: 315px;
+    }
+    .advisor-inner:nth-child(4) {
+        top: 158px;
+        left: 536px;
+    }
+    .advisor-inner:nth-child(5) {
+        top: 468px;
+        left: 664px;
+    }
+    .advisor-inner:nth-child(6) {
+        top: 158px;
+        left: 872px;
+    }
+    .tab-contents .advisor-inner:nth-child(7) {
+        top: 468px;
+        right: 0;
+    }
+    .field p, .team-field {
+        font-size: 38px;
+    }
+    .advisor-inner:nth-child(5) .field p {
+        font-size: 31px;
+    }
+    .advisor-inner:nth-child(1) .field p, .advisor-inner:nth-child(2) .field p  {
+        font-size: 24px;
+    }
+    
+    .team {
+        width: 666px;
+        height: 506px;
+        top: 0;
+        left: 156px;
+    }
+    .team .img-box, .team-hover {
+        width: 666px;
+        height: 506px;
+    }
+
+
+
+    /* ---------- committee ---------- */
+    .tab-contents .committee {
+        padding: 0 250px 0;
+        gap: 146px;
+        margin-top: 334px;
+    }
+    
+    
+    
+    /* ---------- hall ---------- */
+    .tab-contents .hall {
+        height: 942px;
+        padding: 0 250px 0;
+        margin-top: 440px;
+    }
+    .tab-contents .hall .ti {
+        font-size: 54px;
+        margin-bottom: 90px;
+    }
+    .tab-contents .hall .img-box {
+        width: 130%;
+        top: -15%;
+        left: -20%;
+    }
+    .tab-contents .hall ul:nth-child(2) {
+        padding-left: 430px;
+        margin-top: 308px;
+    }
+}
+
+
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .wrap {
+        width: 100%;
+    }
+    .about_section {
+        padding: 0 40px 0;
+    }
+    
+
+
+    /* ---------- title ---------- */
+    .title {
+        padding-top: 286px;
+        margin-bottom: 200px;
+    }
+    h1 {
+        font-size: 11vw;
+    }
+
+
+
+    /* ---------- poster ---------- */
+    .posterNexhibi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 400px;
+    }
+    .posters_group {
+        width: 100%;
+        height: auto;
+    }
+    .mySwiper {
+        width: 100%;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+    
+    .xs-text {
+        width: 100%;
+        text-align: right;
+        margin-top: 30px;
+    }
+
+    .mm, .px {
+        display: none;
+    }
+
+    .arrow {
+        width: 44px;
+        height: 44px;
+        transform: rotate(180deg);
+        margin: 178px 0 178px;
+    }
+    .arrow img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* ---------- video ---------- */
+    .videoNdes {
+        margin-bottom: 400px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .video_group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;  
+        width: 100%;
+    }
+    .video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    .videoNdes .des-text {
+        text-align: center;
+        margin-top: 100px;
+        padding: 0 80px 0;
+    }
+
+
+    /* ---------- tab ---------- */
+    .tab-btn {
+        gap: 60px;
+        height: 32px;
+        margin-bottom: 200px;
+    }
+    .tab-btn ul {
+        width: 210px;
+    }
+    .tab-btn ul li:nth-child(1) {
+        font-size: 18px;
+    } 
+    .tab-btn .circle {
+        width: 12px;
+        height: 12px;
+    }
+    .tab-btn .active .circle {
+        margin: 16px 0 0;
+    }
+
+    .tab-contents {
+        margin-bottom: 400px;
+    }
+
+
+
+    /* ----------  advisor ---------- */
+    .tab-contents .advisor {
+        width: 700px;
+        height: 990px;
+    }
+    .advisor-inner {
+        width: 225px;
+        height: 225px;
+    }
+    
+    .advisor-name {
+        font-size: 25px;
+        width: 225px;
+    }
+    
+    .advisor-inner:nth-child(1) {
+        top: 0px;
+        left: 125px;
+    }
+    .advisor-inner:nth-child(2) {
+        top: 286.25px;
+        left: 26.5px;
+    }
+    .advisor-inner:nth-child(3) {
+        top: 452.65px;
+        left: 138.79px;
+    }
+    .advisor-inner:nth-child(4) {
+        top: 398.54px;
+        left: 332.75px;
+    }
+    .advisor-inner:nth-child(5) {
+        top: 765px;
+        left: 140px;
+    }
+    .advisor-inner:nth-child(6) {
+        top: 140px;
+        left: 475px;
+    }
+    .advisor-inner:nth-child(7) {
+        top: 702.5px;
+        left: 415px;
+    }
+    .field p, .team-field {
+        font-size: 32px;
+    }
+    .advisor-inner:nth-child(5) .field p {
+        font-size: 27px;
+    }
+    .advisor-inner:nth-child(1) .field p, .advisor-inner:nth-child(2) .field p {
+        font-size: 22px;
+    }
+    
+    .team {
+        width: 583.33px;
+        height: 443.48px;
+        top: 260px;
+        left: 0px;
+    }
+    .team .img-box, .team-hover {
+        width: 583.33px;
+        height: 443.48px;
+    }
+
+
+
+    /* ---------- committee ---------- */
+    .tab-contents .committee {
+        gap: 100px;
+    }
+
+    
+    
+    /* ---------- hall ---------- */
+    .tab-contents .hall {
+        width: 100%;
+        overflow-x: hidden;
+        height: auto;
+        padding: 0 40px 0;
+    }
+    .tab-contents .hall .ti {
+        font-size: 36px;
+        margin: 489px 0 40px;
+    }
+    .tab-contents .hall .img-box {
+        width: 150%;
+        top: 0;
+        left: -25%;
+    }
+    .tab-contents .hall ul:nth-child(2) {
+        margin-top: 100px;
+    }
+}
+
+
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .wrap {
+        width: 100%;
+    }
+    .about_section {
+        padding: 0 40px 0;
+    }
+    
+
+
+    /* ---------- title ---------- */
+    .title {
+        padding-top: 112px;
+        margin-bottom: 60px;
+    }
+    h1 {
+        font-size: 11vw;
+    }
+
+
+
+    /* ---------- poster ---------- */
+    .posterNexhibi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 200px;
+    }
+    .posters_group {
+        width: 100%;
+        height: auto;
+    }
+    .mySwiper {
+        width: 100%;
+    }
+    .swiper-pagination {
+        display: none;
+    }
+
+    .mm, .px {
+        display: none;
+    }
+    
+    .xs-text {
+        width: 100%;
+        text-align: right;
+        margin-top: 14px;
+        font-size: 14px;
+    }
+    
+    .arrow {
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+        margin: 90px 0 90px;
+    }
+    .arrow img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .exhibi_des {
+        display: flex;
+        gap: 60px;
+        flex-direction: column;
+    }
+    .des-title {
+        font-size: 40px;
+        margin: 0;
+    }
+    .des-subtitle, .des-text {
+        font-size: 14px;
+        margin: 0;
+    }
+
+
+
+    /* ---------- video ---------- */
+    .videoNdes {
+        margin-bottom: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .video_group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;  
+        width: 100%;
+    }
+    .video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+    .videoNdes .des-text {
+        text-align: center;
+        margin-top: 70px;
+        padding: 0 40px 0;
+    }
+
+
+    /* ---------- tab ---------- */
+    .tab-btn {
+        gap: 14px;
+        height: 25px;
+        margin-bottom: 100px;
+    }
+    .tab-btn ul {
+        width: 94px;
+    }
+    .tab-btn ul li:nth-child(1) {
+        font-size: 8px;
+    } 
+    .tab-btn .circle {
+        width: 6px;
+        height: 6px;
+    }
+
+    .tab-btn .active .circle {
+        margin: 8px 0px 0px;
+    }
+
+    .tab-contents {
+        margin-bottom: 200px;
+    }
+
+
+
+    /* ----------  advisor ---------- */
+    .tab-contents .advisor {
+        width: 280px;
+        height: 396px;
+    }
+    .advisor-inner {
+        width: 90px;
+        height: 90px;
+        border: 0.5px solid var(--white);
+    }
+    
+    .advisor-name {
+        font-size: 10px;
+        width: 90px;
+    }
+    
+    .advisor-inner:nth-child(1) {
+        top: 0px;
+        left: 50px;
+    }
+    .advisor-inner:nth-child(2) {
+        top: 114.5px;
+        left: 10.6px;
+    }
+    .advisor-inner:nth-child(3) {
+        top: 181.06px;
+        left: 55.52px;
+    }
+    .advisor-inner:nth-child(4) {
+        top: 159.42px;
+        left: 133.1px;
+    }
+    .advisor-inner:nth-child(5) {
+        top: 306px;
+        left: 56px;
+    }
+    .advisor-inner:nth-child(6) {
+        top: 56px;
+        left: 190px;
+    }
+    .advisor-inner:nth-child(7) {
+        top: 281px;
+        left: 166px;
+    }
+    .field p, .team-field {
+        font-size: 11.2px;
+    }
+    .advisor-inner:nth-child(5) .field p {
+        font-size: 10px;
+    }
+    .advisor-inner:nth-child(1) .field p, .advisor-inner:nth-child(2) .field p {
+        font-size: 8px;
+    }
+    
+    .team {
+        width: 233.33px;
+        height: 177.39px;
+        top: 104px;
+        left: 0px;
+    }
+    .team .img-box, .team-hover {
+        width: 233.33px;
+        height: 177.39px;
+    }
+
+    
+
+    /* ---------- committee ---------- */
+    .tab-contents .committee {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+    .tab-contents .committee ul {
+        width: 245px;
+        flex-wrap: wrap;
+        padding-left: 28px;
+        display: flex;
+        gap: 14px 38px;
+    }    
+    .tab-contents .committee p {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .tab-contents .committee ul li {
+        width: 37px;
+        font-size: 14px;
+    }
+    
+    
+    /* ---------- hall ---------- */
+    .tab-contents .hall {
+        width: 100%;
+        overflow-x: hidden;
+        height: auto;
+        padding: 0 40px 0;
+    }
+    .tab-contents .hall .ti {
+        font-size: 24px;
+        margin: 285px 0 30px;
+    }
+    .tab-contents .hall .img-box {
+        width: 150%;
+        top: 0;
+        left: -25%;
+    }
+    .tab-contents .hall ul:nth-child(1) .kr {
+        font-size: 14px;
+    }
+    .tab-contents .hall ul:nth-child(2) {
+        margin-top: 90px;
+        font-size: 14px;
+    }
+
+
+
+    /* ---------- tap 기능 (오류 해결) ---------- */
+    .tab-contents .advisor,
+    .tab-contents .committee,
+    .tab-contents .hall { display: none; }
+
+    .tab-contents .active { display: flex; }
+}

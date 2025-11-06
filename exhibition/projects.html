@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="img/favicon.svg">
+
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/up btn.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/pointer.css">
+
+</head>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onkeydownn="return false">
+    <span id="top"></span>
+
+    <!-- up-btn -->
+    <div class="border up-btn">
+        <a href="#top" class="img-box">
+            <img src="img/up_btn.svg" alt="업 버튼">
+        </a>
+    </div>
+    
+    <div class="wrap">
+        <!-- header -->
+        <header class="border">
+            <div class="border inner">
+                <a href="../index.html" class="border home ti">
+                    KJDC 17th <br>
+                    GRADUATION EXHIBITION
+                </a>
+
+                <a href="../index.html" class="symbol">
+                    <img src="img/kjdc_symbol.svg" alt="공주대 디자인컨버전스학과 심볼">
+                </a>
+                
+                <div class="border menus">
+                    <a href="about.html" class="border menu ti">ABOUT</a>
+                    <a href="projects.html" class="border menu ti active">PROJECTS</a>
+                    <a href="designers.html" class="border menu ti">DESIGNERS</a>
+                </div>
+
+                <a href="mobile-menu.html" class="menu-bar">
+                    <img src="img/menu_bar.svg" alt="메뉴 바">
+                </a>
+            </div>
+        </header>
+
+        <!-- title-group -->
+        <section class="border title-group ti">
+            <h1><span>PRO</span>JECT<span>S</span></h1>
+
+            <!-- search-group -->
+            <div class="border search-group">
+                <!-- arrow -->
+                <div class="border arrow img-box">
+                    <img src="img/arrow_white.svg" alt="흰색의 화살표">
+                </div>
+                
+                <!-- searchBox -->
+                <div class="border searchBox">
+                    <div class="border search-icon img-box">
+                        <img src="img/search.svg" alt="검색 아이콘">
+                    </div>
+                    <input type="text" id="search" class="kr" onkeyup="filter()" placeholder="디자이너 혹은 작품명을 검색해 주세요." />
+                </div>
+            </div>
+        </section>
+
+        <!-- page-btn -->
+        <div class="page-btn">
+
+            <p>PAGE NUMBER</p>
+            <div class="page-nav">
+                <a href="#p1" id="page-nav-1">1</a>
+                <a href="#p2" id="page-nav-2">2</a>
+                <a href="#p3" id="page-nav-3">3</a>
+                <a href="#p4" id="page-nav-4">4</a>
+                <a href="#p5" id="page-nav-5">5</a>
+                <a href="#p6" id="page-nav-6">6</a>
+                <a href="#p7" id="page-nav-7">7</a>
+                <a href="#p8" id="page-nav-8">8</a>
+                <a href="#p9" id="page-nav-9">9</a>
+            </div>
+        </div>
+
+        <!-- sortButton -->
+        <section class="border sortButton">            
+            <button class="asc_btn kr active">오름차순</button>
+            <button class="desc_btn kr">내림차순</button>
+        </section>
+
+        <!-- project_group -->
+        <section class="border project_group_wrap">
+            <div class="page-number">
+                <div>
+                    <span id="p1" class="ti"></span>
+                    <span id="blank" class="ti">1p</span>
+                </div>
+                <div>
+                    <span id="p2" class="ti"></span>
+                    <span id="blank" class="ti">2p</span>
+                </div>
+                <div>
+                    <span id="p3" class="ti"></span>
+                    <span id="blank" class="ti">3p</span>
+                </div>
+                <div>
+                    <span id="p4" class="ti"></span>
+                    <span id="blank" class="ti">4p</span>
+                </div>
+                <div>
+                    <span id="p5" class="ti"></span>
+                    <span id="blank" class="ti">5p</span>
+                </div>
+                <div>
+                    <span id="p6" class="ti"></span>
+                    <span id="blank" class="ti">6p</span>
+                </div>
+                <div>
+                    <span id="p7" class="ti"></span>
+                    <span id="blank" class="ti">7p</span>
+                </div>
+                <div>
+                    <span id="p8" class="ti"></span>
+                    <span id="blank" class="ti">8p</span>
+                </div>
+                <div>
+                    <span id="p9" class="ti"></span>
+                    <span id="blank" class="ti">9p</span>
+                </div>
+            </div>
+
+            <div class="border project_group"></div>
+        </section>
+        
+        <!-- footer -->
+        <footer class="border">
+            <div class="inner">
+                <ul class="border text-group">
+                    <li class="border exhibi-name kr">
+                        제17회 국립공주대학교 디자인컨버전스학과 졸업전시회 <br>
+                        <span>17th kongju univ. design convergence graduation exhibition</span>
+                    </li>
+                    <li class="border adress kr">
+                        (31080) 충청남도 천안시 서북구 천안대로 1223-24, 제2공학관 325호 (전화 : 041-521-9400)
+                    </li>
+                    <li class="border copyright en">Copyrightⓒ 2024 Kongju National University. All Rights Reserved.</li>
+                </ul>
+                
+                <ul class="border sns">
+                    <li class="border kjdc_logo">
+                        <a href="https://design.kongju.ac.kr/ZD1220/index.do" target='_blank' class="img-box">
+                            <img src="img/kjdc_logo.svg" alt="공주대 디자인컨버전스학과 로고">
+                        </a>
+                    </li>
+                    <li class="border youtube">
+                        <a href="https://www.youtube.com/@knu_designc_v" target='_blank'>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="border instagram">
+                        <a href="https://www.instagram.com/knu_our0/" target='_blank'>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- script -->    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

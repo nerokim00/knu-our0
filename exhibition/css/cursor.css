@@ -1,0 +1,20 @@
+* {
+    cursor: none !important;
+}
+
+
+.cursor {
+    transition: transform 0.02s ease-out;
+    pointer-events: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    background: var(--green);
+    mix-blend-mode: difference;
+    z-index: 9;
+}
+
+.cursor-hidden {
+    display: none;
+}

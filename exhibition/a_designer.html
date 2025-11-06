@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile of designer</title>
+    <link rel="icon" href="./img/favicon.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/a_designer.css" />
+  </head>
+  
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+    onkeydownn="return false"
+  >
+    <div class="wrap">
+      <section class="a_designer">
+        <!-- close btn -->
+        <div class="boder close_btn">
+          <a onclick="history.back()" href="#" class="img-box">
+            <img src="./img/close_logo.svg" alt="흰색의 창 닫기 버튼" style="cursor: pointer;"/>
+          </a>
+        </div>
+
+        <!-- identity -->
+        <div class="border identity">
+          <a href="#">
+            <img
+              class="identity_img"
+              id="identity_img"
+              src=""
+              alt="학생 아이덴티티 이미지"
+            />
+          </a>
+
+          <!-- des -->
+          <div class="border des_wrap_inner">
+            <ul class="border des_logo img-box">
+              <img
+                src="./img/sentance_warp_left_logo.svg"
+                alt="디자이너 문장을 감싸 여는 아이콘"
+              />
+            </ul>
+
+            <ul class="border a_designer_section">
+              <li class="border des_identity_sentence kr">
+                <!-- 이 부분에서 identity_sentence 문장이 삽입됩니다. -->
+              </li>
+
+              <li class="border des_designer_info en">
+                <!-- 이 부분에서 instagram/email 문장이 삽입됩니다. -->
+              </li>
+            </ul>
+
+            <ul class="border des_logo img-box">
+              <img
+                src="./img/sentance_warp_right_logo.svg"
+                alt="디자이너 문장을 감싸 닫는 아이콘"
+              />
+            </ul>
+          </div>
+        </div>
+
+        <!-- project_group -->
+        <div class="border project_group"></div>
+      </section>
+    </div>
+    <script src="./exhibition/js/a_designer.js"></script>
+  </body>
+</html>

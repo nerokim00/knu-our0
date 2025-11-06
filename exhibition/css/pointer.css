@@ -1,0 +1,19 @@
+/* 드래그 방지 */
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+
+/* about */
+.tab-btn, .advisor-inner, .team {
+    cursor: pointer;
+}
+
+
+/* projects */
+.asc_btn, .desc_btn {
+    cursor: pointer;
+}

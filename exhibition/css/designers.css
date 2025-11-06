@@ -1,0 +1,317 @@
+::-webkit-scrollbar {
+    display: none;
+   }
+
+.wrap {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: visible;
+}
+
+header {
+    background: rgba(0, 0, 0, 1);
+}
+
+
+
+/* ---------- designers_section ---------- */
+.designers_section {
+    position: relative;
+    align-items: center;
+}
+
+#hi {
+    position: sticky;
+    background-color: black;
+    z-index: 10;
+}
+
+
+.identity {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 86px;
+    z-index: 1;
+
+    background-color: var(--black);
+}
+
+
+#identity_img_box {
+    border-radius: 50%;
+    background-image: url(/exhibition/img/png_bg.png);
+    background-size: cover;
+}
+
+.identity_img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: none;
+}
+
+.identity_img:hover {
+    border: 5px solid var(--green);
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Panchang-Extrabold';
+}
+
+
+
+/* ---------- student_section ---------- */
+.student_section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+}
+
+#student_inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.student_name_box {
+    text-align: center;
+    text-wrap: nowrap;
+    color: var(--white);
+    font-weight: 500;
+    opacity: 20%;
+}
+
+.student_name_box.active {
+    transition: all 0.5s;
+    opacity: 100%;
+}
+
+
+
+/*  ---------- 반응형 ---------- */
+/* 데스크탑 */
+@media (min-width: 1200px) {
+    .wrap {
+        max-width: 1920px;
+        /* min-width: 1524px; */
+        justify-content: center;
+    }
+
+
+    /* ---------- designers_section ---------- */
+    #hi {
+        margin-top: 136px;
+        top: 80px;
+    }
+    
+    .gg {
+        height: 1080px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sm {
+        display: none !important;
+    }
+     
+    .identity {
+        width: 730px;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blck);
+    }
+    #identity_img_box {
+        width: 244px;
+        height: 244px;
+        border-radius: 50%;
+    }
+    
+    .title {
+        width: 940px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    h1 {
+        font-size: 80px;
+        margin-bottom: 60px;
+    }
+    
+    
+    
+    /* ---------- student_section ---------- */
+
+    #student_inner {
+        width: 940px;
+        gap: 32px 0px;
+        height: 680px;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    
+    .student_name_box {
+        width: calc(100%/4);
+        height: 100px;
+        line-height: 100px;
+        font-size: 24px;
+    }
+
+    
+    
+    /* ---------- footer ---------- */
+    footer {
+        margin-top: 100px;
+    }
+}
+
+
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .wrap {
+        width: 100%;
+    }
+
+
+    /* ---------- designers_section ---------- */
+    #hi {
+        top: 86px;
+    }
+
+    .sm {
+        display: unset;
+    }
+
+    .lg {
+        display: none;
+    }
+    
+    .identity {
+        padding: 80px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #identity_img_box {
+        width: 22vw;
+        height: 22vw;
+        border-radius: 50%;
+    }
+    
+    .title {
+        width: 100%;
+        padding-bottom: 80px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+    }
+    
+    
+    
+    /* ---------- student_section ---------- */
+    .student_section {
+        padding: 0 auto;
+    }
+
+    #student_inner {
+        width: calc(100% - 144px*2);
+    }
+    
+    .student_name_box {
+        width: calc(100%/3);
+        height: 90px;
+        line-height: 90px;
+        font-size: 24px;
+    }
+
+    
+    
+    /* ---------- footer ---------- */
+    footer {
+        margin-top: 100px;
+    }
+}
+
+
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .wrap {
+        width: 100%;
+    }
+    
+
+    /* ---------- designers_section ---------- */
+    #hi {
+        top: 42px;
+    }
+
+    .sm {
+        display: unset;
+    }
+
+    .lg {
+        display: none;
+    }
+    
+    .identity {
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #identity_img_box {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        border: 1px dashed var(--white);
+    }
+    
+    .title {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 9vw;
+    }
+    
+    
+    
+    /* ---------- student_section ---------- */
+    .student_section {
+        padding: 0 auto;
+    }
+
+    #student_inner {
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .student_name_box {
+        width: 100%;
+        height: 65px;
+        line-height: 65px;
+        font-size: 18px;
+    }
+
+    
+    
+    /* ---------- footer ---------- */
+    footer {
+        margin-top: 100px;
+    }
+}

@@ -1,0 +1,163 @@
+/* .border {
+    border: 1px solid #f00;
+} */
+
+.wrap {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, black 10%, rgba(0, 0, 0, 0) 90%);
+    z-index: 10;
+}
+header .inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------- home ---------- */
+.home {
+    min-width: 376px;
+    display: flex;
+    font-family: 'Panchang-Bold';
+    font-size: 16px;
+    padding: 7px 34px;
+}
+
+
+
+/* ---------- menus/menu-bar ---------- */
+.menus {
+    height: 33px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: 'Panchang-Regular';
+    font-size: 16px;
+    height: 100%;
+    padding: 0 32px;
+    border-radius: 33px;
+}
+
+header .active {
+    font-family: 'Panchang-Medium';
+    background-color: var(--white);
+    color: var(--black);
+}
+.menu-bar {
+    width: 22px;
+    height: 22px;
+}
+
+
+/*  ---------- hover 효과 ---------- */
+.menu:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition: all 0.5s
+}
+
+
+
+/*  ---------- 반응형 ---------- */
+/* 데스크탑 */
+@media (min-width: 1200px) {
+    .wrap {
+        max-width: 1920px; 
+        min-width: 1524px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    header .inner {
+        padding: 0 216px 0;
+    }
+
+    .symbol {
+        display: none;
+    }
+    .menu-bar {
+        display: none;
+    }
+}
+
+
+
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .wrap {
+        width: 100%;
+    }
+
+    header {
+        height: 86px;
+    }
+
+    header .inner {
+        padding: 0 40px 0;
+    }
+
+    .home {
+        display: none;
+    }
+    .symbol {
+        display: flex;
+        width: 36px;
+        height: 36px;
+    }
+    .menu-bar {
+        display: none;
+    }
+}
+
+
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .wrap {
+        width: 100%;
+        height: 42px;
+    }
+
+    header {
+        height: 86px;
+    }
+
+    header .inner {
+        padding: 0 20px 0;
+    }
+
+    .home {
+        display: none;
+    }
+    .symbol {
+        display: flex;
+        width: 36px;
+        height: 36px;
+    }
+    .menus {
+        display: none;
+    }
+    .menu-bar {
+        display: flex;
+        width: 36px;
+        height: 36px;
+    }
+}

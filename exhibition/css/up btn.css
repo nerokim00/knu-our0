@@ -1,0 +1,30 @@
+/* ◼︎ z-index 오류 없을 수 있도록 값 설정 */
+.up-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 58px;
+    height: 58px;
+    z-index: 5;
+}
+.up-btn .img-box {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*  ---------- 반응형 ---------- */
+/* 태블릿 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .up-btn {
+        display: none;
+    }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+    .up-btn {
+        display: none;
+    }
+}
